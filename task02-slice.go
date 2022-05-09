@@ -2,7 +2,7 @@ package homework
 
 func reverse(input []int64) (result []int64) {
 	inputLen := len(input)
-	output := make([]int, inputLen)
+	output := make([]int64, inputLen)
 
 	for i, n := range input {
 		j := inputLen - i - 1
