@@ -1,14 +1,14 @@
 package homework
 
 func reverse(input []int64) (result []int64) {
-	values := []string{}
-	keys := []int{}
-	for k := range input {
-		keys = append(keys, k)
+	inputLen := len(input)
+	output := make([]int, inputLen)
+
+	for i, n := range input {
+		j := inputLen - i - 1
+
+		output[j] = n
 	}
-	sort.Ints(keys)
-	for _, k := range keys {
-		values = append(values, input[k])
-	}
-	return values
+
+	return output
 }
